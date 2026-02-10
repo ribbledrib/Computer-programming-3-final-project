@@ -8,7 +8,10 @@ int main(){
     fptr = fopen("data.txt", "r");
 
     if (fptr == NULL){
-        printf("The file is not opened");
+        printf("The file is not opened\n");
+    }
+    else{
+        printf("The file was opened successfuly\n");
     }
     return 0;
 }
