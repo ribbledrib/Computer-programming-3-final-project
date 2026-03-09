@@ -1,12 +1,12 @@
-abc = gcc
-flags = -Wall -Wextra -pedantic
-src = main.c
-target = main
+CC = gcc
+FLAGS = -Wall -Wextra -pedantic
+SRC = main.c
+TARGET = main
 
-all: $(target)
+all: $(TARGET)
 
-$(target): $(src)
-	gcc $(flags) $(src) -o $(target)
+$(TARGET): $(SRC)
+	$(CC) $(FLAGS) $(STC) -o $(TARGET)
 
 clean:
-	rm -f $(target)
+	rm -f $(TARGET)
